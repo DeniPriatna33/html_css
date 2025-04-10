@@ -19,13 +19,13 @@ body {
 
 .left-header {
     color: antiquewhite;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .right-header {
     display: grid;
     grid-template-columns: 5fr 120px 1fr;
-    justify-items: end;
+    gap: 20px;
 }
 
 .search-input {
@@ -44,9 +44,27 @@ body {
     font-size: 20px;
 }
 
-.search-input>i {
+.search-input>i, .upload, .account > i{
     border-radius: 0 4px 4px 0;
     background-color: antiquewhite;
     padding: 12px 20px;
     color: rgb(149, 61, 70);
+}
+
+.upload > input {
+    display: none;
+}
+
+.upload, .account > i {
+    border-radius: 4px;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5px;
+}
+
+.account-name{
+    color: antiquewhite;
 }
