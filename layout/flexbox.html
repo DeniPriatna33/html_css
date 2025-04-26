@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 8px solid green;
+            height: 80vh;
+            margin: 5px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* align-content: start; */
+            /* justify-content: space-between; */
+            /* Start (Awal), Center (Tengan), end (akhir) , space-between (Rata tengah), space-around (Rata jauh), space-evenly (Rata rata)*/
+            /* align-items: start; */
+            /* flex-direction: column; */
+            /* Row (Baris - Kiri - Kanan), Column (Kolom - Atas - Bawah) */
+        }
+
+        .item {
+            height: 200px;
+            width: 150px;
+            font-size: 24px;
+            color: white;
+            background-color: rgb(255, 0, 230);
+            border: 5px solid rgb(255, 60, 0);
+        }
+
+
+
+        .item-1 {
+            align-self: end;
+        }
+
+        /* .item-2 {
+            flex-grow: 2;
+        }
+
+        .item-3 {
+            flex-grow: 1;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <!-- <div style="display: flex;">
+        <div style="background-color: lightpink; width: 100px; height: 100px;">100px</div>
+        <div style="background-color: lightblue; width: 100px; height: 100px;">100px</div>
+    </div> -->
+
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <!-- <div class="item item-4">Item 4</div>
+        <div class="item item-5">Item 5</div> -->
+    </div>
+</body>
+
+</html>
